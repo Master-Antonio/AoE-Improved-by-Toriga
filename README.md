@@ -8,5 +8,8 @@ For this reason I decided to put my Mod under the AGPL-3.0 license on github, so
 # How to contribute
 You can fork the repository or ask to add you in this repository, i created a branch named "develop", for every your change you have to ask a "Pull request", 
 in the description of the pull request explain what you changed, what you fixed and what you added, try to be more clear possible, do pull request only after you tested the mod in game.
+You will be added to the contributors...
 Enjoy
 
+# Contributors
+Toriga
