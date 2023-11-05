@@ -1,0 +1,28 @@
+<DataWarehouse>
+	<!--AOE Improved by Toriga/-->
+	<DataObject Name="AOE Improved by Toriga" Type="Mod" Id="17528334284353285326" Version="1">
+		<DataProperty Name="m_description" Type="Object">
+			<DataValue Name="util::ReflectLocString">13622031391594112926</DataValue>
+			<!--AOE Improved by Toriga/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="13622031391594112926" OwnerId="17528334284353285326">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="3963717043"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="41220017"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="2412105414"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1138156439"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="2"/>
+			</DataObject>
+		</DataProperty>
+		<DataProperty Name="m_name" Type="Object">
+			<DataValue Name="util::ReflectLocString">5685696768991127820</DataValue>
+			<!--AOE Improved by Toriga/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="5685696768991127820" OwnerId="17528334284353285326">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="3963717043"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="41220017"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="2412105414"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1138156439"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="1"/>
+			</DataObject>
+		</DataProperty>
+	</DataObject>
+</DataWarehouse>
+

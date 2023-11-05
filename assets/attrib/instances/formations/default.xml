@@ -1,0 +1,16 @@
+<instance description="" template="formations">
+	<group name="formation_bag">
+		<float name="chance_to_use_facing_angle" value="0" />
+		<float name="clockwise_facing_angle" value="0" />
+		<float name="facing_angle_attention_weight" value="0" />
+		<float name="follower_move_slop" value="0" />
+		<float name="look_ahead_time" value="2" />
+		<float name="rotation_rate" value="60" />
+		<float name="rotation_time_max" value="1" />
+		<float name="scale" value="0.7" />
+		<float name="time_to_hold_facing_angle" value="0" />
+		<list name="spots">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="4" />
+</instance>

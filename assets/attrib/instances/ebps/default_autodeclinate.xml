@@ -1,0 +1,337 @@
+<instance description="" template="camera">
+	<uniqueid name="pbgid" value="121006" />
+	<group name="camera_bag" comment="THIS IS THE DEFAULT GAME CAMERA">
+		<list name="modules">
+			<template_reference name="camera_modules" value="camera_modules\cam_module_follow_list">
+			</template_reference>
+			<template_reference name="camera_modules" value="camera_modules\cam_module_input_pan">
+				<list name="inputs">
+					<group name="input" comment="keyboard">
+						<enum name="input_type" value="keyboard" />
+						<template_reference name="ease_in" value="pan_camera_ease">
+							<group name="ease">
+								<enum name="spline_type" value="catmull_rom" />
+								<float name="duration" value="0.25" />
+								<list name="control_points">
+									<group name="point">
+										<float name="x" value="-0.25" />
+										<float name="y" value="0.25" />
+									</group>
+									<group name="point">
+										<float name="x" value="0" />
+										<float name="y" value="0.25" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.25" />
+										<float name="y" value="0.44" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.5" />
+										<float name="y" value="0.63" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.75" />
+										<float name="y" value="0.82" />
+									</group>
+									<group name="point">
+										<float name="x" value="1" />
+										<float name="y" value="1" />
+									</group>
+									<group name="point">
+										<float name="x" value="1.25" />
+										<float name="y" value="1" />
+									</group>
+								</list>
+								<bool name="full_ease_correction" value="False" />
+								<float name="desired_min_duration" value="0.02" />
+							</group>
+						</template_reference>
+						<template_reference name="ease_out" value="pan_camera_ease">
+							<group name="ease">
+								<enum name="spline_type" value="catmull_rom" />
+								<float name="duration" value="0.2" />
+								<list name="control_points">
+									<group name="point">
+										<float name="x" value="-0.25" />
+										<float name="y" value="2" />
+									</group>
+									<group name="point">
+										<float name="x" value="0" />
+										<float name="y" value="1" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.25" />
+										<float name="y" value="0.25" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.5" />
+										<float name="y" value="0.1" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.75" />
+										<float name="y" value="0.05" />
+									</group>
+									<group name="point">
+										<float name="x" value="1" />
+										<float name="y" value="0" />
+									</group>
+									<group name="point">
+										<float name="x" value="1.25" />
+										<float name="y" value="0" />
+									</group>
+								</list>
+								<bool name="full_ease_correction" value="True" />
+								<float name="desired_min_duration" value="0.2" />
+							</group>
+						</template_reference>
+						<bool name="has_inertia_ease_out" value="True" />
+						<string name="key" value="keyboard_pan_default" />
+						<group name="magnitude">
+							<float name="x" value="225" />
+							<float name="y" value="225" />
+						</group>
+						<group name="cap">
+							<float name="x" value="1" />
+							<float name="y" value="1" />
+						</group>
+					</group>
+					<group name="input" comment="mouse middle button">
+						<enum name="input_type" value="mouse" />
+						<template_reference name="ease_in" value="pan_camera_ease">
+							<group name="ease">
+								<enum name="spline_type" value="linear" />
+								<float name="duration" value="0.1" />
+								<list name="control_points">
+									<group name="point">
+										<float name="x" value="0" />
+										<float name="y" value="0" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.5" />
+										<float name="y" value="0.5" />
+									</group>
+									<group name="point">
+										<float name="x" value="1" />
+										<float name="y" value="1" />
+									</group>
+								</list>
+								<bool name="full_ease_correction" value="False" />
+								<float name="desired_min_duration" value="0" />
+							</group>
+						</template_reference>
+						<template_reference name="ease_out" value="pan_camera_ease">
+							<group name="ease">
+								<enum name="spline_type" value="linear" />
+								<float name="duration" value="0.1" />
+								<list name="control_points">
+									<group name="point">
+										<float name="x" value="0" />
+										<float name="y" value="1" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.5" />
+										<float name="y" value="0.5" />
+									</group>
+									<group name="point">
+										<float name="x" value="1" />
+										<float name="y" value="0" />
+									</group>
+								</list>
+								<bool name="full_ease_correction" value="False" />
+								<float name="desired_min_duration" value="0" />
+							</group>
+						</template_reference>
+						<bool name="has_inertia_ease_out" value="False" />
+						<string name="key" value="mouse_pan_default" />
+						<group name="magnitude">
+							<float name="x" value="100" />
+							<float name="y" value="100" />
+						</group>
+						<group name="cap">
+							<float name="x" value="40" />
+							<float name="y" value="40" />
+						</group>
+					</group>
+					<group name="input" comment="screen edge">
+						<enum name="input_type" value="screen_edge" />
+						<template_reference name="ease_in" value="pan_camera_ease">
+							<group name="ease">
+								<enum name="spline_type" value="catmull_rom" />
+								<float name="duration" value="0.2" />
+								<list name="control_points">
+									<group name="point">
+										<float name="x" value="-0.25" />
+										<float name="y" value="0.15" />
+									</group>
+									<group name="point">
+										<float name="x" value="0" />
+										<float name="y" value="0.15" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.25" />
+										<float name="y" value="0.35" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.5" />
+										<float name="y" value="0.6" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.75" />
+										<float name="y" value="0.85" />
+									</group>
+									<group name="point">
+										<float name="x" value="1" />
+										<float name="y" value="1" />
+									</group>
+									<group name="point">
+										<float name="x" value="1.25" />
+										<float name="y" value="1" />
+									</group>
+								</list>
+								<bool name="full_ease_correction" value="False" />
+								<float name="desired_min_duration" value="0.02" />
+							</group>
+						</template_reference>
+						<template_reference name="ease_out" value="pan_camera_ease">
+							<group name="ease">
+								<enum name="spline_type" value="catmull_rom" />
+								<float name="duration" value="0.25" />
+								<list name="control_points">
+									<group name="point">
+										<float name="x" value="-0.25" />
+										<float name="y" value="2" />
+									</group>
+									<group name="point">
+										<float name="x" value="0" />
+										<float name="y" value="1" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.25" />
+										<float name="y" value="0.25" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.5" />
+										<float name="y" value="0.1" />
+									</group>
+									<group name="point">
+										<float name="x" value="0.75" />
+										<float name="y" value="0.05" />
+									</group>
+									<group name="point">
+										<float name="x" value="1" />
+										<float name="y" value="0" />
+									</group>
+									<group name="point">
+										<float name="x" value="1.25" />
+										<float name="y" value="0" />
+									</group>
+								</list>
+								<bool name="full_ease_correction" value="True" />
+								<float name="desired_min_duration" value="0.25" />
+							</group>
+						</template_reference>
+						<bool name="has_inertia_ease_out" value="True" />
+						<string name="key" value="screen_edge_pan_default" />
+						<group name="magnitude">
+							<float name="x" value="200" />
+							<float name="y" value="200" />
+						</group>
+						<group name="cap">
+							<float name="x" value="1" />
+							<float name="y" value="1" />
+						</group>
+					</group>
+				</list>
+				<bool name="lock_xy_plane" value="False" />
+				<float name="pan_distance_factor" value="0.5" />
+			</template_reference>
+			<template_reference name="camera_modules" value="camera_modules\cam_module_ground_height">
+				<float name="dist_ground_min" value="0.5" />
+				<bool name="modify_pivot" value="True" />
+			</template_reference>
+			<template_reference name="camera_modules" value="camera_modules\cam_module_script">
+				<float name="orbit_delta" value="65" />
+				<float name="orbit_duration" value="0.1" />
+				<group name="smoothing">
+					<template_reference name="spring_orbit" value="options\camera\smoothing_option">
+						<float name="spring_strength" value="3" />
+						<float name="damping" value="1" />
+					</template_reference>
+				</group>
+			</template_reference>
+			<template_reference name="camera_modules" value="camera_modules\cam_module_follow_target">
+				<bool name="use_avg_squad_pos" value="True" />
+				<float name="interpolation_time" value="-1" />
+			</template_reference>
+			<template_reference name="camera_modules" value="camera_modules\cam_module_autodeclinate">
+				<group name="defaults">
+					<float name="distance" value="110" />
+					<float name="yaw" value="135" />
+				</group>
+				<group name="tuning">
+					<float name="distance_max" value="68" overrideParent="True" />
+					<float name="distance_min" value="36" />
+					<bool name="enable_orbit_input" value="True" />
+					<float name="pitch_max" value="47.27" />
+					<float name="pitch_min" value="40" />
+					<float name="orbit_speed" value="20" />
+					<float name="fov_min" value="39.96" />
+					<float name="fov_max" value="60" />
+					<float name="fov_max_height_difference" value="1" />
+					<int name="fov_slope_samples" value="5" />
+					<float name="fov_scale_on_zoom_in" value="0" />
+					<float name="fov_scale_on_zoom_out" value="0" />
+					<float name="fov_height_difference_threshold" value="1" />
+					<float name="fov_eye_to_pivot_sample_scale" value="1" />
+					<float name="fov_pivot_to_reverse_eye_sample_scale" value="0.25" />
+					<float name="max_height_sample_scale" value="1" />
+					<int name="max_height_samples" value="7" />
+					<group name="smoothing">
+						<template_reference name="spring_distance" value="options\camera\smoothing_option">
+							<float name="spring_strength" value="2" />
+							<float name="damping" value="1" />
+						</template_reference>
+						<template_reference name="spring_fov" value="options\camera\smoothing_option">
+							<float name="spring_strength" value="1" />
+							<float name="damping" value="1" />
+						</template_reference>
+					</group>
+					<enum name="fov_height_sampling_method" value="camera_mesh" />
+					<float name="max_height_sample_relaxation_beneath_camera" value="0.5" />
+				</group>
+			</template_reference>
+		</list>
+		<group name="defaults">
+			<template_reference name="position" value="basic_data_types\vector3">
+				<float name="x" value="0" />
+				<float name="y" value="50" />
+				<float name="z" value="0" />
+			</template_reference>
+			<template_reference name="lookAt" value="basic_data_types\vector3">
+				<float name="x" value="0" />
+				<float name="y" value="50" />
+				<float name="z" value="0" />
+			</template_reference>
+			<float name="fov" value="60" />
+			<bool name="validate_position" value="True" />
+			<float name="clip_near" value="1" />
+			<float name="clip_far" value="3600" />
+			<enum name="projection_mode" value="perspective" />
+			<float name="projection_start_culling_distance" value="95" />
+		</group>
+		<group name="tuning">
+			<group name="input">
+				<float name="distance_rate_wheel" value="5" />
+				<float name="distance_rate_wheel_in" value="1" />
+				<float name="distance_rate_wheel_out" value="1" />
+				<float name="tilt_rate_mouse" value="100" />
+				<float name="yaw_rate_mouse" value="150" />
+				<float name="pan_scale_keyboard" value="10" comment="Not Active" />
+				<float name="pan_scale_screen" value="10" comment="Not Active" />
+				<float name="pan_scale_mouse" value="10" comment="Not Active" />
+				<float name="yaw_rate_keyboard" value="1" />
+				<float name="tilt_rate_keyboard" value="1" />
+			</group>
+		</group>
+	</group>
+</instance>

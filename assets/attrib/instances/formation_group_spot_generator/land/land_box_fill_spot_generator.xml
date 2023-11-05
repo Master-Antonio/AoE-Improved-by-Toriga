@@ -1,0 +1,138 @@
+<instance description="" template="formation_group_spot_generator">
+	<uniqueid name="pbgid" value="196912" />
+	<group name="formation_group_spot_generator_bag">
+		<list name="ranks">
+			<group name="rank">
+				<float name="offset_from_previous_rank" value="3" />
+				<list name="unit_types">
+					<enum name="unit_type" value="scout" />
+				</list>
+				<group name="spacing_between_units">
+					<float name="x" value="2.1" />
+					<float name="y" value="2.1" />
+				</group>
+				<template_reference name="rank_option" value="options\formation_group_spot_generator\box_rank_option">
+					<int name="primary_column_count" value="3" />
+					<int name="primary_row_count" value="3" />
+					<bool name="use_zigzag_pattern" value="False" />
+					<int name="maximum_column_count" value="0" />
+				</template_reference>
+			</group>
+			<group name="rank">
+				<float name="offset_from_previous_rank" value="3" />
+				<list name="unit_types">
+					<enum name="unit_type" value="ram" />
+					<enum name="unit_type" value="siege_tower" />
+					<enum name="unit_type" value="war_elephant" />
+				</list>
+				<group name="spacing_between_units">
+					<float name="x" value="5" />
+					<float name="y" value="6" />
+				</group>
+				<template_reference name="rank_option" value="options\formation_group_spot_generator\box_rank_option">
+					<int name="primary_column_count" value="3" />
+					<int name="primary_row_count" value="3" />
+					<bool name="use_zigzag_pattern" value="False" />
+					<int name="maximum_column_count" value="0" />
+				</template_reference>
+			</group>
+			<group name="rank">
+				<float name="offset_from_previous_rank" value="1" />
+				<list name="unit_types">
+					<enum name="unit_type" value="cavalry_armored" />
+					<enum name="unit_type" value="cavalry_light" />
+					<enum name="unit_type" value="firelancer" />
+					<enum name="unit_type" value="cavalry_archer" />
+				</list>
+				<group name="spacing_between_units">
+					<float name="x" value="1.4" />
+					<float name="y" value="2.45" />
+				</group>
+				<template_reference name="rank_option" value="options\formation_group_spot_generator\box_rank_option">
+					<int name="primary_column_count" value="5" />
+					<int name="primary_row_count" value="2" />
+					<bool name="use_zigzag_pattern" value="False" />
+					<int name="maximum_column_count" value="0" />
+				</template_reference>
+			</group>
+			<group name="rank">
+				<float name="offset_from_previous_rank" value="0" />
+				<list name="unit_types">
+					<enum name="unit_type" value="infantry" />
+					<enum name="unit_type" value="archer" />
+					<enum name="unit_type" value="crossbowman" />
+					<enum name="unit_type" value="handcannon" />
+				</list>
+				<group name="spacing_between_units">
+					<float name="x" value="1" />
+					<float name="y" value="1" />
+				</group>
+				<template_reference name="rank_option" value="options\formation_group_spot_generator\box_rank_option">
+					<int name="primary_column_count" value="3" />
+					<int name="primary_row_count" value="3" />
+					<bool name="use_zigzag_pattern" value="False" />
+					<int name="maximum_column_count" value="0" />
+				</template_reference>
+			</group>
+			<group name="rank">
+				<float name="offset_from_previous_rank" value="3" />
+				<list name="unit_types">
+					<enum name="unit_type" value="siege" />
+				</list>
+				<group name="spacing_between_units">
+					<float name="x" value="5" />
+					<float name="y" value="5" />
+				</group>
+				<template_reference name="rank_option" value="options\formation_group_spot_generator\box_rank_option">
+					<int name="primary_column_count" value="3" />
+					<int name="primary_row_count" value="3" />
+					<bool name="use_zigzag_pattern" value="False" />
+					<int name="maximum_column_count" value="0" />
+				</template_reference>
+			</group>
+			<group name="rank">
+				<float name="offset_from_previous_rank" value="3" />
+				<list name="unit_types">
+					<enum name="unit_type" value="monk" />
+					<enum name="unit_type" value="official" />
+					<enum name="unit_type" value="supply_cart" />
+				</list>
+				<group name="spacing_between_units">
+					<float name="x" value="1.8" />
+					<float name="y" value="1.8" />
+				</group>
+				<template_reference name="rank_option" value="options\formation_group_spot_generator\box_rank_option">
+					<int name="primary_column_count" value="3" />
+					<int name="primary_row_count" value="3" />
+					<bool name="use_zigzag_pattern" value="False" />
+					<int name="maximum_column_count" value="0" />
+				</template_reference>
+			</group>
+			<group name="rank">
+				<float name="offset_from_previous_rank" value="3" />
+				<list name="unit_types">
+					<enum name="unit_type" value="khan" />
+					<enum name="unit_type" value="hero" />
+				</list>
+				<group name="spacing_between_units">
+					<float name="x" value="2.1" />
+					<float name="y" value="2.1" />
+				</group>
+				<template_reference name="rank_option" value="options\formation_group_spot_generator\box_rank_option">
+					<int name="primary_column_count" value="3" />
+					<int name="primary_row_count" value="3" />
+					<bool name="use_zigzag_pattern" value="False" />
+					<int name="maximum_column_count" value="0" />
+				</template_reference>
+			</group>
+		</list>
+		<float name="master_width_restriction" value="0" />
+		<instance_reference name="associated_ability_bag" value="" />
+		<group name="cohesion">
+			<float name="distance_between_squads_for_move_clustering" value="3.5" />
+			<float name="formation_merge_delay_seconds" value="0.5" />
+			<float name="formation_regroup_on_squad_removal_delay_seconds" value="2" />
+		</group>
+		<instance_reference name="allowed_pass_type" value="pass_types\infantry" />
+	</group>
+</instance>
